@@ -6,11 +6,59 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background_gradient"
     tools:context="com.example.appxilio.MainActivity$PlaceholderFragment" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/ImageHistory"
+        android:src="@drawable/help" />
 
+    <ImageView
+        android:id="@+id/ImageAmbulance"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/ImageFireFighter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/ambulance" />
+
+    <ImageView
+        android:id="@+id/ImageFireFighter"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/ImageAmbulance"
+        android:layout_below="@+id/imagePolice"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/firefighter" />
+
+    <ImageView
+        android:id="@+id/imagePolice"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/ImageFireFighter"
+        android:layout_below="@+id/ImageHistory"
+        android:layout_marginTop="27dp"
+        android:src="@drawable/police" />
+
+    <ImageView
+        android:id="@+id/ImageStatus"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/imagePolice"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/help" />
+
+    <ImageView
+        android:id="@+id/ImageHistory"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="14dp"
+        android:layout_toLeftOf="@+id/imageView1"
+        android:src="@drawable/history" />
+   
 </RelativeLayout>
